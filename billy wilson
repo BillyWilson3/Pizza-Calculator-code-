@@ -1,0 +1,39 @@
+# Step 1: Start
+
+    # Step 2: Get the number of pizzas from the user
+
+    num_pizzas = int(input("Enter the number of pizzas: "))
+
+
+
+    # Step 3: Get the cost per pizza from the user
+
+    cost_per_pizza = float(input("Enter the cost of 1 pizza: £"))
+
+
+
+    # Step 4: Calculate subtotal
+
+    subtotal = num_pizzas * cost_per_pizza
+
+
+
+    # Step 5: Calculate sales tax (20%)
+
+    sales_tax = subtotal * 0.20
+
+
+
+    # Step 6: Calculate total cost
+
+    total_cost = subtotal + sales_tax
+
+
+
+    # Step 7: Display total cost
+
+    print(f"Total amount due including 20% tax is: £{total_cost:.2f}")
+
+except ValueError:
+
+    print("Please enter a valid number for both pizzas and cost.")
